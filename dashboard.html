@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dashboard</h1>
+        <div id="usuario-regular-dashboard" style="display: none;">
+            <h2>Dashboard Usuario Regular</h2>
+            <button onclick="Reservar()">Crear Reserva</button>
+            <button onclick="cerrarSesion()">Cerrar sesion</button>
+        </div>
+        <div id="admin-dashboard" style="display: none;">
+            <h2>Dashboard Administrador</h2>
+            <button onclick="cerrarSesion()">Cerrar sesion</button>
+            <button onclick="eliminarReservaAdmin()">Eliminar Reserva</button>
+            <button onclick="mostrarFormularioReserva()">Crear Reserva para Usuarios</button>
+            <button onclick="editarReservaAdmin()">Editar Reserva</button>
+            <div id="formulario-reserva" style="display:none;">
+                <input type="text" id="nombre-reserva" placeholder="Nombre de la Reserva">
+                <input type="number" id="cupo-reserva" placeholder="Cupo Máximo">
+                <textarea id="descripcion-reserva" placeholder="Descripción de la Reserva"></textarea>
+                <button onclick="crearReservaAdmin()">Guardar Reserva</button>
+            </div>
+        </div>
+        <div id="reservas-lista"></div>
+    </div>
+    <script src="Usuario.js"></script>
+    <script src="Reserva.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+body, html {
+    font-family: Arial, sans-serif;
+    background-color: #eaeaea; /* Lighter gray background */
+    color: #444; /* Slightly darker text color */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%; /* Reduced width */
+    margin: auto;
+    padding: 15px; /* Reduced padding */
+}
+
+input[type="text"], input[type="number"], textarea {
+    width: 100%;
+    padding: 12px; /* Increased padding */
+    margin-top: 7px; /* Increased top margin */
+    margin-bottom: 12px; /* Increased bottom margin */
+}
+
+button {
+    padding: 12px 25px; /* Increased padding */
+    background-color: #0057b7; /* Darker blue */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004a99; /* Even darker blue */
+}
+
+div#form-reservation {
+    margin-bottom: 25px; /* Increased bottom margin */
+}
+
+div#reservations-list div {
+    background-color: #d3d3d3; /* Lighter gray */
+    padding: 12px; /* Increased padding */
+    margin-top: 7px; /* Increased top margin */
+}

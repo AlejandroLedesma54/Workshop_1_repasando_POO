@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reservation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Reservation System</h1>
+        <div id="login-form">
+            <h2>Login</h2>
+            <input type="email" id="login-email" placeholder="Email">
+            <input type="password" id="login-password" placeholder="Password">
+            <button onclick="login()">Login</button>
+            <button onclick="showRegistration()">Register</button>
+        </div>
+        <div id="registration-form" style="display: none;">
+            <h2>Register</h2>
+            <input type="text" id="register-name" placeholder="Full Name">
+            <input type="email" id="register-email" placeholder="Email">
+            <input type="password" id="register-password" placeholder="Password">
+            <select id="register-role" onchange="showAdminKeyField()">
+                <option value="regular">Regular User</option>
+                <option value="admin">Admin</option>
+            </select>
+            <input type="password" id="register-key" placeholder="Admin Key" style="display: none;">
+            <button onclick="registerUser()">Register</button>
+            <button onclick="hideRegistration()">Back to Login</button>
+        </div>
+    </div>
+    <script src="user.js"></script>
+    <script src="reservation.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
